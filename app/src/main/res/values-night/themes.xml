@@ -1,0 +1,31 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.PDM2Jokenpo" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Primary branding color. -->
+        <item name="colorPrimary">@color/cor_nome_app_dark</item>
+        <item name="colorPrimaryVariant">@color/txt_title_dark</item>
+        <item name="colorOnPrimary">@color/black_dark</item>
+        <item name="android:textColor">@color/color_ted</item>
+
+        <!-- Secondary branding color. -->
+        <item name="colorSecondary">@color/color_ted_dark</item>
+        <item name="colorSecondaryVariant">@color/color_ted</item>
+        <item name="colorOnSecondary">@color/black_dark</item>
+
+        <!-- Customize your theme here. -->
+        <item name="android:windowBackground">@color/bck_color_dark</item>
+        <item name="android:textColorPrimary">@color/white_dark</item>
+        <item name="android:windowLightStatusBar">false</item>
+
+        <item name="buttonStyle">@style/Widget.Game.Button</item>
+    </style>
+
+    <style name="CustomAlertDialog" parent="Theme.Material3.DayNight.Dialog.Alert">
+        <item name="android:windowBackground">@drawable/back_alert</item>
+    </style>
+
+    <style name="Widget.Game.Button" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">@color/button_background_dark</item>
+        <item name="android:textColor">@color/button_text_dark</item>
+    </style>
+</resources>

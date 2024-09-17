@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bck_color"
+    tools:context=".view.Jokenpo">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35sp"
+        android:text="@string/txt_pc_choice"
+        android:textColor="@color/txt_title"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivPChoice"
+        android:layout_width="107dp"
+        android:layout_height="107dp"
+        android:layout_marginTop="17dp"
+        android:contentDescription="@string/img_choice_app"
+        android:src="@drawable/padrao"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitle" />
+
+    <TextView
+        android:id="@+id/tvPickOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:text="@string/txt_user_choice"
+        android:textColor="@color/material_dynamic_neutral_variant10"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivPChoice" />
+
+    <ImageView
+        android:id="@+id/ivStone"
+        android:layout_width="107dp"
+        android:layout_height="107dp"
+        android:layout_marginTop="35dp"
+        android:clickable="true"
+        android:contentDescription="@string/img_stone"
+        android:src="@drawable/rock"
+        app:layout_constraintEnd_toStartOf="@+id/ivPaper"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvPickOne" />
+
+    <ImageView
+        android:id="@+id/ivPaper"
+        android:layout_width="107dp"
+        android:layout_height="107dp"
+        android:layout_marginTop="35dp"
+        android:clickable="true"
+        android:contentDescription="@string/img_paper"
+        android:src="@drawable/paper"
+        app:layout_constraintEnd_toStartOf="@+id/ivScissors"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/ivStone"
+        app:layout_constraintTop_toBottomOf="@+id/tvPickOne" />
+
+    <ImageView
+        android:id="@+id/ivScissors"
+        android:layout_width="107dp"
+        android:layout_height="107dp"
+        android:layout_marginTop="35dp"
+        android:clickable="true"
+        android:contentDescription="@string/img_scissors"
+        android:src="@drawable/scissors"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/ivPaper"
+        app:layout_constraintTop_toBottomOf="@+id/tvPickOne" />
+
+    <TextView
+        android:id="@+id/tvPlacar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:text="@string/txt_placar"
+        android:textColor="@color/color_ted"
+        android:textSize="35sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivPaper" />
+
+    <TextView
+        android:id="@+id/tvAppWin"
+        android:layout_width="204dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/txt_resultado_rodada"
+        android:textAlignment="center"
+        android:textSize="62sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvVitoriaApp" />
+
+    <TextView
+        android:id="@+id/tvUserWin"
+        android:layout_width="204dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/txt_resultado_rodada"
+        android:textAlignment="center"
+        android:textSize="62sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvVitoriaApp" />
+
+    <Button
+        android:id="@+id/btnRetornar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
+        android:layout_marginEnd="17dp"
+        android:text="@string/btn_retornar"
+        android:textAlignment="center"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:cornerRadius="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvAppWin" />
+
+    <TextView
+        android:id="@+id/tvVitoriaApp"
+        android:layout_width="204dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/txt_app"
+        android:textAlignment="center"
+        android:textColor="@color/design_default_color_error"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvPlacar" />
+
+    <TextView
+        android:id="@+id/tvVitoriaUser"
+        android:layout_width="204dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/txt_user"
+        android:textAlignment="center"
+        android:textColor="@color/design_default_color_secondary_variant"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/tvVitoriaApp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvPlacar" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

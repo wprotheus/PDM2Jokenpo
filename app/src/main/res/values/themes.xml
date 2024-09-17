@@ -1,0 +1,31 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.PDM2Jokenpo" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Primary branding color. -->
+        <item name="colorPrimary">@color/cor_nome_app</item>
+        <item name="colorPrimaryVariant">@color/txt_title</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="android:textColor">@color/color_ted</item>
+
+        <!-- Secondary branding color. -->
+        <item name="colorSecondary">@color/color_ted</item>
+        <item name="colorSecondaryVariant">@color/bac_logo</item>
+        <item name="colorOnSecondary">@color/white</item>
+
+        <!-- Customize your theme here. -->
+        <item name="android:windowBackground">@color/bck_color</item>
+        <item name="android:textColorPrimary">@color/black</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+
+    <style name="CustomAlertDialog" parent="Theme.Material3.DayNight.Dialog.Alert">
+        <item name="android:windowBackground">@drawable/back_alert</item>
+    </style>
+
+    <style name="Widget.Game.Button" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">@color/button_background</item>
+        <item name="android:textColor">@color/button_text</item>
+    </style>
+
+    <style name="Theme.PDM2Jokenpo" parent="Base.Theme.PDM2Jokenpo" />
+</resources>
